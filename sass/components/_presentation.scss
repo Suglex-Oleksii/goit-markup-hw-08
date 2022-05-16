@@ -1,0 +1,34 @@
+.section--no-padding-top {
+    padding-top: 0;
+}
+
+.presentation__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.presentation__thumb {
+    position: relative;
+}
+
+.presentation__img {
+    width: 370px;
+    height: 294px;
+}
+
+.presentation__box {
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.presentation__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    color: $background-header-color;
+}

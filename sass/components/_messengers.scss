@@ -1,0 +1,41 @@
+.messengers {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+}
+
+.messengers__item {
+    width: 44px;
+    height: 44px;
+}
+
+.messengers__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.messengers__link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    fill: #afb1b8;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+        background-color: #2196f3;
+        fill: #ffffff;
+    }
+}
+
+
+.messengers__icon {
+    width: 20px;
+    height: 20px;
+}

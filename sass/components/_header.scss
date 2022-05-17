@@ -5,17 +5,37 @@
 
 .header__container,
 .nav {
+
+    @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    }
+
 }
 
 .navigator {
+
+    @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+    margin-left: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
     margin-left: 93px;
+    }
+    
 }
 
 .navigator__item+.navigator__item {
+
+    @media screen and (min-width: 768px) {
     margin-left: 50px;
+    }
+  
 }
 
 .navigator__link {
@@ -42,10 +62,25 @@
 .contacts {
     display: flex;
     margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    }
 }
 
+
 .contacts__item+.contacts__item {
+
+    @media screen and (min-width: 1200px) {
     margin-left: 50px;
+    }
+
 }
 
 .contacts__link {
@@ -63,25 +98,60 @@
 
 .navigator__link,
 .contacts__link {
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
     display: inline-flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 }
 
+.navigator__link {
+    @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
+}
+
+
 .contacts__icon--mail {
+    fill: currentColor;
+
+    @media screen and (min-width: 480px) {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    }
+    
+    @media screen and (min-width: 1200px) {
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: currentColor;
+    }
+
 }
 
 .contacts__icon--tel {
+    fill: currentColor;
+
+    @media screen and (min-width: 480px) {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+    }
+    
+    @media screen and (min-width: 1200px) {
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    fill: currentColor;
+    }
+
 }

@@ -153,9 +153,12 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+.header__container {
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
-  .header__container,
-  .nav {
+  .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -165,26 +168,77 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .navigator {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container-mobile {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-color: #ffffff;
+  padding: 48px 40px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu-container-mobile.is-open {
+  display: block;
+}
+
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .navigator {
+  .menu-container {
     margin-left: 88px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .navigator {
+  .menu-container {
     margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -214,13 +268,6 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {

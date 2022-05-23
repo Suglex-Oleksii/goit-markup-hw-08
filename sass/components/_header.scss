@@ -23,15 +23,19 @@
     background-color: transparent;
     margin-left: auto;
     fill: $title-color;
-    z-index: 1;
+    z-index: 10;
 
     @media screen and (min-width: 768px) {
     display: none;
 }
 }
 
-.menu-button:hover {
+.menu-button__icon:hover {
     fill: #2196f3;
+}
+
+.menu-button__icon {
+    fill: currentColor;
 }
 
 
@@ -69,7 +73,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 796px;
+    height: 100%;
+
+    position: fixed;
+    z-index: 5;
+
+ 
     
     background-color: $background-header-color;
     padding: 48px 40px;
@@ -107,13 +116,11 @@
 }
 
 
-
-
 .navigator {
 display: block;
 
     @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
+    margin-bottom: auto;
     }
 
     @media screen and (min-width: 768px) {

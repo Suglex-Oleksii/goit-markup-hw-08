@@ -269,6 +269,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 48px;
 }
 
 @media screen and (min-width: 768px) {
@@ -294,12 +295,6 @@ img {
 
 .navigator {
   display: block;
-}
-
-@media screen and (max-width: 767px) {
-  .navigator {
-    margin-bottom: 302px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -361,6 +356,8 @@ img {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin-bottom: 64px;
+    margin-top: auto;
+    height: 470px;
   }
 }
 

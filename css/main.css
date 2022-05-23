@@ -212,6 +212,7 @@ img {
 
 .menu-button.is-open .icon-close {
   display: block;
+  position: fixed;
 }
 
 .menu-button.is-open .icon-menu {
@@ -243,6 +244,12 @@ img {
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container.is-open {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -252,12 +259,6 @@ img {
     z-index: 5;
     background-color: #ffffff;
     padding: 48px 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .menu-container.is-open {
-    display: block;
   }
 }
 
@@ -297,7 +298,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .navigator {
-    margin-bottom: auto;
+    margin-bottom: 302px;
   }
 }
 

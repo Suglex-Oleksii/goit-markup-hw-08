@@ -169,7 +169,8 @@ display: block;
         flex-direction: column-reverse;
         margin-bottom: 64px;
         margin-top: auto;
-        height: 470px;
+        min-height: 50%;
+        height: auto;
     }
 
     @media screen and (min-width: 768px) {

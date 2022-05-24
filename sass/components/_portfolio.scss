@@ -1,11 +1,25 @@
 .button-list {
     display: flex;
+    
+    
+
+    @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+    @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     justify-content: center;
+    }
 }
 
 .button-list__item:not(:last-child) {
     margin-right: 8px;
+
+    @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+}
 }
 
 .button-list__button {
@@ -31,15 +45,21 @@
 }
 
 .portfolio {
+
+    @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
 }
+}
 
 .portfolio__item {
+
+    @media screen and (min-width: 1200px) {
     margin-right: 30px;
     margin-bottom: 30px;
+}
 }
 
 .portfolio__link {
@@ -63,9 +83,17 @@
 }
 
 .portfolio__img {
+
+    @media screen and (max-width: 767px) {
+    width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
     width: 370px;
     height: 294px;
+    }
 }
+
 
 .portfolio__box {
     width: 100%;

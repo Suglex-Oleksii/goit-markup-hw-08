@@ -5,18 +5,21 @@
 }
 
 .footer-container {
-
-
     @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+}
 }
 
 .footer-logo {
     width: 235px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -29,7 +32,7 @@
 }
 
 .footer-address__item:not(:last-child) {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
     margin-bottom: 8px;
     }
 
@@ -62,7 +65,7 @@
 
 .footer-messengers {
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -80,7 +83,7 @@
     line-height: 1.1;
     color: $background-header-color;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
     }
 }
@@ -101,7 +104,7 @@
 
 .form-footer {
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -113,8 +116,12 @@
 }
 
 .form-footer__list {
-    
-    @media screen and (min-width: 768px) {
+   
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
     display: flex;
     margin-top: 20px;
     justify-content: center;
@@ -132,7 +139,7 @@
         outline: none;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
     min-width: 450px;
 }

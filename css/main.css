@@ -212,7 +212,6 @@ img {
 
 .menu-button.is-open .icon-menu {
   display: block;
-  position: fixed;
 }
 
 .menu-button.is-open .icon-close {
@@ -636,6 +635,12 @@ img {
 @media screen and (max-width: 767px) {
   .backdrop {
     padding: 93px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .backdrop {
+    width: 97%;
   }
 }
 

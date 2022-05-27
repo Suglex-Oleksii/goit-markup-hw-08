@@ -414,7 +414,7 @@ img {
     font-size: 34px;
     line-height: 1.2;
     text-decoration: none;
-    color: #757575;
+    color: #2196f3;
   }
 }
 
@@ -1143,6 +1143,12 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .team__img {
     width: 270px;
@@ -1346,14 +1352,14 @@ img {
   }
 }
 
-.button-list__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 @media screen and (max-width: 767px) {
-  .button-list__item:not(:last-child) {
+  .button-list__item:nth-child(-n+3) {
     margin-bottom: 15px;
   }
+}
+
+.button-list__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button-list__button {
@@ -1398,6 +1404,12 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio__item {
     margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1530,6 +1542,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1537,12 +1551,15 @@ img {
   width: 235px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-logo {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-logo {
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -1585,12 +1602,15 @@ img {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-messengers {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-messengers {
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -1637,9 +1657,8 @@ img {
 
 @media screen and (max-width: 1199px) {
   .form-footer {
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
+    margin-top: 60px;
   }
 }
 
@@ -1668,7 +1687,8 @@ img {
 }
 
 .form-footer__input {
-  min-width: 358px;
+  display: block;
+  width: 100%;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1682,7 +1702,12 @@ img {
 @media screen and (max-width: 1199px) {
   .form-footer__input {
     margin-bottom: 20px;
-    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer__input {
+    min-width: 358px;
   }
 }
 

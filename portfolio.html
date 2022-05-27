@@ -22,17 +22,30 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="">Web<span class="logo__right">Studio</span></a>
-
-        <button class="menu-button is-open" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-          <svg class="menu-button__icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
-            <use class="icon-menu" href="./images/icons.svg/mobile-menu/mobile-menu-sprite.svg#menu"></use>
-            <use class="icon-close" href="./images/icons.svg/mobile-menu/mobile-menu-sprite.svg#close"></use>
+        <button
+          class="menu-button is-open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="menu-button__icon"
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./images/icons.svg/mobile-menu/mobile-menu-sprite.svg#menu"
+            ></use>
+            <use
+              class="icon-close"
+              href="./images/icons.svg/mobile-menu/mobile-menu-sprite.svg#close"
+            ></use>
           </svg>
         </button>
-
-        <div class="menu-container"  id="menu-container" data-menu>
-
-        
+        <div class="menu-container" id="menu-container" data-menu>
           <ul class="navigator">
             <li class="navigator__item">
               <a class="navigator__link" href="index.html">Студия</a>
@@ -50,7 +63,9 @@
           </ul>
           <ul class="contacts">
             <li class="contacts__item">
-              <a class="contacts__link contacts__link--mail" href="mailto:info@devstudio.com"
+              <a
+                class="contacts__link contacts__link--mail"
+                href="mailto:info@devstudio.com"
                 ><svg class="contacts__icon--mail">
                   <use
                     href="./images/icons.svg/contacts/contacts-sprite.svg#envelope"
@@ -59,7 +74,9 @@
               >
             </li>
             <li class="contacts__item contacts__item--tel">
-              <a class="contacts__link contacts__link--tel" href="tel:+380961111111"
+              <a
+                class="contacts__link contacts__link--tel"
+                href="tel:+380961111111"
                 ><svg class="contacts__icon--tel">
                   <use
                     href="./images/icons.svg/contacts/contacts-sprite.svg#smartphone"
@@ -68,49 +85,44 @@
               >
             </li>
           </ul>
-
-
-                <ul class="mobile-messengers">
-                  <li class="mobile-messengers__item">
-                    <a
-                      class="mobile-messengers__link"
-                      href="https://www.instagram.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >Instagram</a>
-                  </li>
-
-                  <li class="mobile-messengers__item">
-                    <a
-                      class="mobile-messengers__link"
-                      href="https://www.twitter.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >Twitter</a>        
-                  </li>
-
-                  <li class="mobile-messengers__item">
-                    <a
-                      class="mobile-messengers__link"
-                      href="https://www.facebook.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >Facebook</a>
-                  </li>
-
-                  <li class="mobile-messengers__item">
-                    <a
-                      class="mobile-messengers__link mobile-messengers__link--last"
-                      href="https://www.linkedin.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >Linkedin</a>                      
-                  </li>
-                </ul>  
-                
-                
-
-
+          <ul class="mobile-messengers">
+            <li class="mobile-messengers__item">
+              <a
+                class="mobile-messengers__link"
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-messengers__item">
+              <a
+                class="mobile-messengers__link"
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-messengers__item">
+              <a
+                class="mobile-messengers__link"
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-messengers__item">
+              <a
+                class="mobile-messengers__link mobile-messengers__link--last"
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -146,11 +158,38 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/projects/img-1.jpg"
-                    alt="Веб сайт-Технокряк"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-1-desktop.jpg    1x,
+                        ./images/portfolio/projects/img-1-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 961px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-1-tablet.jpg    1x,
+                        ./images/portfolio/projects/img-1-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 576px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-1-mobile.jpg    1x,
+                        ./images/portfolio/projects/img-1-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 575px)"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/projects/img-1.jpg"
+                      alt="Веб сайт-Технокряк"
+                    />
+                  </picture>
+
                   <div class="portfolio__box">
                     <p class="portfolio__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -169,11 +208,38 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/projects/img-2.jpg"
-                    alt="Дизайн-Постер Новый Орлеан против Золотой Звезды"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-2-desktop.jpg    1x,
+                        ./images/portfolio/projects/img-2-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 961px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-2-tablet.jpg    1x,
+                        ./images/portfolio/projects/img-2-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 576px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-2-mobile.jpg    1x,
+                        ./images/portfolio/projects/img-2-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 575px)"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/projects/img-2.jpg"
+                      alt="Дизайн-Постер Новый Орлеан против Золотой Звезды"
+                    />
+                  </picture>
+
                   <div class="portfolio__box">
                     <p class="portfolio__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -194,11 +260,38 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/projects/img-3.jpg"
-                    alt="Приложение-Ресторан Морепродукты"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-3-desktop.jpg    1x,
+                        ./images/portfolio/projects/img-3-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 961px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-3-tablet.jpg    1x,
+                        ./images/portfolio/projects/img-3-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 576px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-3-mobile.jpg    1x,
+                        ./images/portfolio/projects/img-3-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 575px)"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/projects/img-3.jpg"
+                      alt="Приложение-Ресторан Морепродукты"
+                    />
+                  </picture>
+
                   <div class="portfolio__box">
                     <p class="portfolio__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -217,11 +310,38 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href=""
                 ><div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/projects/img-4.jpg"
-                    alt="Маркетинг-Проект Прайм"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-4-desktop.jpg    1x,
+                        ./images/portfolio/projects/img-4-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 961px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-4-tablet.jpg    1x,
+                        ./images/portfolio/projects/img-4-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 576px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-4-mobile.jpg    1x,
+                        ./images/portfolio/projects/img-4-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 575px)"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/projects/img-4.jpg"
+                      alt="Маркетинг-Проект Прайм"
+                    />
+                  </picture>
+
                   <div class="portfolio__box">
                     <p class="portfolio__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -240,11 +360,38 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href=""
                 ><div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/projects/img-5.jpg"
-                    alt="Приложение-Проект Коробки"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-5-desktop.jpg    1x,
+                        ./images/portfolio/projects/img-5-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 961px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-5-tablet.jpg    1x,
+                        ./images/portfolio/projects/img-5-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 576px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-5-mobile.jpg    1x,
+                        ./images/portfolio/projects/img-5-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 575px)"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/projects/img-5.jpg"
+                      alt="Приложение-Проект Коробки"
+                    />
+                  </picture>
+
                   <div class="portfolio__box">
                     <p class="portfolio__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -263,11 +410,38 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href=""
                 ><div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/projects/img-6.jpg"
-                    alt="Веб сайт-Вдохновение не имеет границ"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-6-desktop.jpg    1x,
+                        ./images/portfolio/projects/img-6-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 961px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-6-tablet.jpg    1x,
+                        ./images/portfolio/projects/img-6-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 576px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-6-mobile.jpg    1x,
+                        ./images/portfolio/projects/img-6-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 575px)"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/projects/img-6.jpg"
+                      alt="Веб сайт-Вдохновение не имеет границ"
+                    />
+                  </picture>
+
                   <div class="portfolio__box">
                     <p class="portfolio__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -286,11 +460,38 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href=""
                 ><div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/projects/img-7.jpg"
-                    alt="Дизайн-Издание Ограниченная Версия"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-7-desktop.jpg    1x,
+                        ./images/portfolio/projects/img-7-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 961px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-7-tablet.jpg    1x,
+                        ./images/portfolio/projects/img-7-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 576px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-7-mobile.jpg    1x,
+                        ./images/portfolio/projects/img-7-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 575px)"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/projects/img-7.jpg"
+                      alt="Дизайн-Издание Ограниченная Версия"
+                    />
+                  </picture>
+
                   <div class="portfolio__box">
                     <p class="portfolio__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -309,11 +510,38 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href=""
                 ><div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/projects/img-8.jpg"
-                    alt="Маркетинг-Проект ЛАБ"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-8-desktop.jpg    1x,
+                        ./images/portfolio/projects/img-8-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 961px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-8-tablet.jpg    1x,
+                        ./images/portfolio/projects/img-8-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 576px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-8-mobile.jpg    1x,
+                        ./images/portfolio/projects/img-8-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 575px)"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/projects/img-8.jpg"
+                      alt="Маркетинг-Проект ЛАБ"
+                    />
+                  </picture>
+
                   <div class="portfolio__box">
                     <p class="portfolio__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -332,11 +560,38 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href=""
                 ><div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/projects/img-9.jpg"
-                    alt="Приложение-Растущий бизнес"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-9-desktop.jpg    1x,
+                        ./images/portfolio/projects/img-9-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 961px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-9-tablet.jpg    1x,
+                        ./images/portfolio/projects/img-9-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 576px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projects/img-9-mobile.jpg    1x,
+                        ./images/portfolio/projects/img-9-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 575px)"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/projects/img-9.jpg"
+                      alt="Приложение-Растущий бизнес"
+                    />
+                  </picture>
+
                   <div class="portfolio__box">
                     <p class="portfolio__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
